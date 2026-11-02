@@ -1,0 +1,4 @@
+{"messages":[
+ {"id":101,"flight":"G31234","tail":"PR-XBA","label":"H1","label_desc":"Terminal","departure":"SBGR","destination":"SBRP","text":"POS REPORT","time":"2026-10-30T14:02:11Z","message_type":"acars","station_id":"FRANCA","eta":"1430","lat":-20.5,"lon":-47.4,"altitude_ft":35000,"freq_mhz":131.55},
+ {"id":102,"flight":null,"tail":null,"label":null,"text":null,"time":"2026-10-30T14:03:00Z"}
+]}

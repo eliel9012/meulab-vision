@@ -1,0 +1,151 @@
+name: MeuLabVision
+options:
+  createIntermediateGroups: true
+  minimumXcodeGenVersion: 2.44.0
+settings:
+  base:
+    SWIFT_VERSION: 6.0
+    SWIFT_STRICT_CONCURRENCY: complete
+    GENERATE_INFOPLIST_FILE: YES
+    TARGETED_DEVICE_FAMILY: 7
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+packages:
+  MeuLabCore:
+    path: MeuLabCore
+targets:
+  MeuLabVision:
+    type: application
+    platform: visionOS
+    deploymentTarget: "27.0"
+    info:
+      path: Info.plist
+      properties:
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        NSWorldSensingUsageDescription: O radar imersivo detecta mesas e superfícies da sala para apoiar o radar sobre uma mesa real.
+        NSSupportsGroupActivities: true
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: true
+        CFBundleURLTypes:
+          - CFBundleURLName: fun.meulab.vision
+            CFBundleURLSchemes:
+              - meulabvision
+    entitlements:
+      path: MeuLabVision.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.fun.meulab.vision
+        com.apple.developer.group-session: true
+    dependencies:
+      - target: MeuLabVisionWidgets
+        embed: true
+      - package: MeuLabCore
+    sources:
+      - path: Sources
+      - path: Shared
+      - path: Assets.xcassets
+      - path: Resources
+        excludes:
+          - TripItinerary.json
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: fun.meulab.vision
+        INFOPLIST_KEY_CFBundleDisplayName: MeuLab Vision
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.utilities
+        ENABLE_USER_SCRIPT_SANDBOXING: NO
+    postBuildScripts:
+      - name: Copy local trip itinerary
+        basedOnDependencyAnalysis: false
+        script: |
+          if [ -f "${PROJECT_DIR}/Resources/TripItinerary.json" ]; then
+            cp "${PROJECT_DIR}/Resources/TripItinerary.json" "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TripItinerary.json"
+          else
+            echo "warning: TripItinerary.json ausente; a seção Viagem fica sem roteiro"
+          fi
+      - name: Copy local API configuration
+        basedOnDependencyAnalysis: false
+        script: |
+          if [ -f "${PROJECT_DIR}/Secrets.plist" ]; then
+            cp "${PROJECT_DIR}/Secrets.plist" "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Secrets.plist"
+          elif [ "${CONFIGURATION}" = "Release" ]; then
+            echo "error: Secrets.plist ausente; build Release sairia sem acesso à API"
+            exit 1
+          else
+            echo "warning: Secrets.plist ausente; recursos da API ficam indisponíveis"
+          fi
+  MeuLabVisionWidgets:
+    type: app-extension
+    platform: visionOS
+    deploymentTarget: "27.0"
+    info:
+      path: Widgets/Info.plist
+      properties:
+        CFBundleDisplayName: MeuLab Widgets
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    entitlements:
+      path: Widgets/MeuLabVisionWidgets.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.fun.meulab.vision
+    sources:
+      - path: Widgets
+        excludes:
+          - Info.plist
+          - "*.entitlements"
+      - path: Shared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: fun.meulab.vision.widgets
+        SKIP_INSTALL: YES
+        ENABLE_USER_SCRIPT_SANDBOXING: NO
+  MeuLabVisionUITests:
+    type: bundle.ui-testing
+    platform: visionOS
+    deploymentTarget: "27.0"
+    sources:
+      - path: UITests
+    dependencies:
+      - target: MeuLabVision
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: fun.meulab.vision.uitests
+  MeuLabVisionTests:
+    type: bundle.unit-test
+    platform: visionOS
+    deploymentTarget: "27.0"
+    sources:
+      - path: Tests
+    dependencies:
+      - target: MeuLabVision
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: fun.meulab.vision.tests
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/MeuLabVision.app/MeuLabVision"
+        BUNDLE_LOADER: "$(TEST_HOST)"
+schemes:
+  MeuLabVision:
+    build:
+      targets:
+        MeuLabVision: all
+        MeuLabVisionTests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - MeuLabVisionTests
+    archive:
+      config: Release
+  MeuLabVisionUITests:
+    build:
+      targets:
+        MeuLabVision: all
+        MeuLabVisionUITests: [test]
+    test:
+      config: Debug
+      targets:
+        - MeuLabVisionUITests

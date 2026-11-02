@@ -1,0 +1,13 @@
+{
+  "attribution": "Mapzen Terrain Tiles / SRTM terrain data courtesy of the U.S. Geological Survey",
+  "centerElevationMeters": 1015,
+  "centerLatitude": -20.51,
+  "centerLongitude": -47.40,
+  "maximumElevationMeters": 1721,
+  "minimumElevationMeters": 221,
+  "radiusMeters": 200000,
+  "source": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium",
+  "spacingMeters": 1000,
+  "tileZoom": 9,
+  "width": 401
+}

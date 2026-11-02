@@ -1,0 +1,1 @@
+{"ok":true,"devices":[{"device":"/dev/nvme0","model":"Samsung 980","health_passed":true,"temperature_c":41,"percentage_used":3,"media_errors":0},{"device":"/dev/sda"}]}

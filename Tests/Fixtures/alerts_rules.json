@@ -1,0 +1,2 @@
+[{"id":"r1","name":"CPU alta","type":"cpu","threshold":90,"enabled":true,"lastTriggered":"2026-10-30T10:00:00Z"},
+ {"id":"r2","name":"Disco","type":"disk","threshold":85.5,"enabled":false,"lastTriggered":null}]

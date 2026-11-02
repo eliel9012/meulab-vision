@@ -1,0 +1,6 @@
+{"totalFlights":320,"uniqueAircraft":210,
+ "hourlyStats":[{"hour":0,"flightCount":3},{"hour":14,"flightCount":31}],
+ "dailyStats":[{"date":"2026-10-30","flightCount":320,"uniqueAircraft":210}],
+ "topAircraftTypes":[{"type":"A320","count":80,"percentage":25}],
+ "topRoutes":null,
+ "altitudeDistribution":[{"range":"30-40k","count":150,"percentage":46.9}]}

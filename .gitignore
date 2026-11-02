@@ -1,0 +1,13 @@
+# Local configuration and personal data
+Secrets.plist
+Resources/TripItinerary.json
+
+# Xcode and SwiftPM
+DerivedData/
+build/
+.build/
+.swiftpm/
+xcuserdata/
+*.xcuserstate
+
+.DS_Store

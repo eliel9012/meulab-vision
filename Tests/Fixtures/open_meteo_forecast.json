@@ -1,0 +1,6 @@
+{"hourly":{"time":["2026-10-30T00:00","2026-10-30T01:00","2026-10-30T02:00"],
+  "temperature_2m":[21.5,20.9,20.1],"relative_humidity_2m":[80,82,85],
+  "precipitation_probability":[10,20],"precipitation":[0,0.2,0],"wind_speed_10m":[5,6,7],"uv_index":[0,0,0]},
+ "daily":{"time":["2026-10-30","2026-10-31"],"temperature_2m_max":[31,29],"temperature_2m_min":[18,17],
+  "precipitation_sum":[0.2,4],"precipitation_probability_max":[20,70],"uv_index_max":[9,7],
+  "sunrise":["2026-10-30T05:50","2026-10-31T05:49"],"sunset":["2026-10-30T18:35","2026-10-31T18:36"]}}

@@ -1,0 +1,2 @@
+{"containers":[{"ID":"abc123","Names":"readsb","Image":"ghcr.io/sdr-enthusiasts/readsb","State":"running","Status":"Up 2 days","Health":{"Status":"healthy"}},
+ {"ID":"def456","Names":"acars","Image":"acarshub","State":"exited","Status":"Exited (1)"}]}

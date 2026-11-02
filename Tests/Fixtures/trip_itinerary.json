@@ -1,0 +1,12 @@
+[
+ {"id":"d1","date":"23 out","weekday":"sexta-feira","title":"Ida","tone":"flight","events":[
+   {"id":"d1.0","time":"06:10","icon":"✈️","title":"Voo G3 9405 Ribeirão Preto (RAO) → São Paulo (GRU)","desc":"Chegada 07:20","pending":false,"tz":"America/Sao_Paulo"},
+   {"id":"d1.1","time":"22:30","icon":"✈️","title":"Voo UX 9158 São Paulo (GRU) → Madri (MAD)","desc":"Chegada 14:25 (24/10)","pending":false,"tz":"America/Sao_Paulo"},
+   {"id":"d1.2","time":"livre","icon":"✈️","title":"Voo XX 999 Sem horário (AAA) → (BBB)","desc":"","pending":false},
+   {"id":"d1.3","time":"10:00","icon":"✈️","title":"Voo LA 3300 pendente (GRU) → (RAO)","desc":"","pending":true},
+   {"id":"d1.4","time":"12:00","icon":"🍽","title":"Almoço","desc":"Restaurante","pending":false}
+ ]},
+ {"id":"d0","date":"22 out","weekday":"quinta-feira","title":"Antes","tone":"event","events":[
+   {"id":"d0.0","time":"23:50","icon":"✈️","title":"Voo AD 9400 Londres (LHR) → Lisboa (LIS)","desc":"Chegada 00:40","pending":false,"tz":"Europe/London"}
+ ]}
+]

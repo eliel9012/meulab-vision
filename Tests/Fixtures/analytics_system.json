@@ -1,0 +1,5 @@
+{"cpu":{"dataPoints":[{"timestamp":"2026-10-30T10:00:00Z","usage":12.5},{"timestamp":"2026-10-30T10:15:00Z","usage":40}],"average":26.25,"peak":40,"minimum":12.5},
+ "memory":{"dataPoints":[{"timestamp":"2026-10-30T10:00:00Z","usedPercent":61}],"averageUsage":61,"peakUsage":61,"minimumAvailable":null},
+ "disk":{"dataPoints":[],"averageUsage":70,"peakUsage":71,"growthRate":0.2},
+ "temperature":{"dataPoints":[{"timestamp":"2026-10-30T10:00:00Z","temperature":52.1}],"average":52.1,"peak":52.1},
+ "uptime":{"current":86400,"average":43200,"reboots":1}}

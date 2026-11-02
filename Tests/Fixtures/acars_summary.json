@@ -1,0 +1,5 @@
+{"today":{"messages":412,"flights":37,"aircraft":29,"peak_hour":"14:00"},
+ "last_24h":{"messages":980,"flights":71,"aircraft":55,"peak_hour":null},
+ "last_hour":18,
+ "top_aircraft":[{"tail":"PR-XBA","flight":"G31234","count":22},{"tail":"PS-AEA","flight":null,"count":9}],
+ "top_labels":[{"label":"H1","description":"Message to/from terminal","count":120},{"label":"_d","count":40}]}

@@ -1,0 +1,1347 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		009CC6DDEA0438E6FFF96600 /* LineChartAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353A29888808BCA53A0A912F /* LineChartAccessibility.swift */; };
+		06A07331418A7DE73E4E0DA5 /* VisionAlertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323EC8EAB62D0EA47F68B422 /* VisionAlertsView.swift */; };
+		070180876832600DA998A4F2 /* VisionRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB0A74FC27B7CB0D03BB57 /* VisionRootView.swift */; };
+		08626BCCC47CBBFD3B2A0C36 /* ACARSMessageWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DED9957614553FFEBC4064 /* ACARSMessageWindow.swift */; };
+		09E0C68BCBA5DF9321B9EB28 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8916CBBE95B5EE9E87B2A77C /* SettingsView.swift */; };
+		0A94D97549859FF063619976 /* SpatialAudioSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE987090C6DB7FEE5C03B651 /* SpatialAudioSession.swift */; };
+		0B5414CD0B86682E2D784476 /* VisionWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A7A04A23E1F517DF0DD5AF /* VisionWeatherView.swift */; };
+		0CBBEE9CBFE4F984E6711F73 /* system_partitions.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B29A483C798A10CDC8635B1 /* system_partitions.json */; };
+		0EB9D07A6E671A0BD2C78B8E /* Fase3ATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D603585C344EE015946C4187 /* Fase3ATests.swift */; };
+		0F41E41BDF78A37B029C0382 /* GeodesyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C9BC96253CFA39D76FCC84 /* GeodesyTests.swift */; };
+		14D37DE678B2158B0921C709 /* WidgetSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118419945BC6D621DEC9C008 /* WidgetSnapshot.swift */; };
+		15AC3288A7C554C39CA60004 /* AlertModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EAC4BC60F094A180DC6FF3 /* AlertModels.swift */; };
+		168DE4C1B0B0C72CA04464BC /* VisionAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1111ADC8BA2A00F1A0B4A6 /* VisionAPIClient.swift */; };
+		1705DAC30590D6DF2494BABC /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417397A8570E58CB17C55A2A /* MockURLProtocol.swift */; };
+		1E35C799385EDCC0EC49EA3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89D74454945267E0752272A9 /* Assets.xcassets */; };
+		1E4949156130C252A5A2E201 /* AlertEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251355A8FE1EDEF243E5470C /* AlertEntity.swift */; };
+		1E560B0FA90D6F77493F1A7C /* WidgetSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118419945BC6D621DEC9C008 /* WidgetSnapshot.swift */; };
+		1ECB4E697A21FA52D3C7EFB5 /* AlertChimePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FF029C1450C35C777B29D5 /* AlertChimePlayer.swift */; };
+		203904BFFF024B8ADF57AE64 /* Fase3BTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76779DBD87D19D38EA9AA887 /* Fase3BTests.swift */; };
+		20F4F89BB8F3A0F12932D884 /* ADSBDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F847C35701F2EBCB53ED430 /* ADSBDecoderTests.swift */; };
+		21D1916C2BCE74A07C609BF2 /* VisionInsightViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CD7368470D6486206AE891 /* VisionInsightViews.swift */; };
+		2501750DD147AA535DA36B86 /* RadarVolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890B7D0FCBCF7A3DBD5828AA /* RadarVolumeView.swift */; };
+		2A3A528F1FD1C95551355374 /* HourDayBinning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2CA831D3B0F99ABE219A5D /* HourDayBinning.swift */; };
+		2DAD093D2CB561224428CF90 /* analytics_adsb.json in Resources */ = {isa = PBXBuildFile; fileRef = 8ADE6E724B3F1F57A78F767E /* analytics_adsb.json */; };
+		2E4999E7C7EF1232139F18FB /* systemd_status.json in Resources */ = {isa = PBXBuildFile; fileRef = 334637CF7696A37F5D844947 /* systemd_status.json */; };
+		2F56431B7BBE0FD32C7B8E68 /* RadarMapWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EE6344AF837F933C904F16 /* RadarMapWindowView.swift */; };
+		308A9113395256D6128638C2 /* RadarSyncModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0835D06104ACE709028903 /* RadarSyncModel.swift */; };
+		315BB954232F17C58C43DE90 /* VisionFlightSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5C91BEB1366C4620C091A2 /* VisionFlightSearchView.swift */; };
+		3254415C8B04A83C89E69F54 /* VisionFlightEnrichmentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895E11E6E35569B04C597870 /* VisionFlightEnrichmentService.swift */; };
+		32EA44E014A68C8E150D6C0F /* VisionTripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3F781CCABB04268595B4E1 /* VisionTripView.swift */; };
+		33F9770CA5B97BD6DA7E00EE /* RadarPingPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA255E02A7363A85D30DE38 /* RadarPingPlayer.swift */; };
+		36A32AB401284351D4403DBA /* VisionSeriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13884F9C81AF29ACB5D4D4E /* VisionSeriesView.swift */; };
+		381EE2F2241F61706EE46572 /* AircraftMotionSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C94C430B73951E1B2BFC637 /* AircraftMotionSystem.swift */; };
+		3CF209CA17CAEADDC1C5EE01 /* RadarGroupActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD220DAEFBAC83B26C07482 /* RadarGroupActivity.swift */; };
+		3E3D45CEBD521D7CE54FC908 /* ReviewCleanupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86AEAD6B255B63B5FD558E7 /* ReviewCleanupTests.swift */; };
+		3E9745D479CE4EF4044E9E8F /* infra_metrics.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E394CBF4E52652A1B64FB31 /* infra_metrics.json */; };
+		4083B357138B1B236096C06E /* WidgetSnapshotWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D636CEEB3D767109A2DA62C4 /* WidgetSnapshotWriter.swift */; };
+		412FC4D156EEF5A6FB3DFC48 /* AircraftListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9407B510605FFA7F5118CB91 /* AircraftListView.swift */; };
+		494750174881564F20C8FA6D /* VisionInsightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3241B4C977DE0D17B88D0E4E /* VisionInsightService.swift */; };
+		4B2DAB7D62326A7B688A88B2 /* RadarSceneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4EBECF33C0FBBFC6EFCF34 /* RadarSceneController.swift */; };
+		4D3F4F83C6A2D0E8E9D7A460 /* RadarSharedSpaceRelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF92013770CCEC57577C947 /* RadarSharedSpaceRelay.swift */; };
+		4DF450715ECDE52D2E57702F /* docker_status.json in Resources */ = {isa = PBXBuildFile; fileRef = 38B6023236944ED1EC97BD1F /* docker_status.json */; };
+		51025903C3A64EBF312F5339 /* Fase4WidgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388DF1586923438AD45B83A6 /* Fase4WidgetTests.swift */; };
+		511D89BA12D31F935D38275D /* ForecastModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3A16F258CDBF766AE5C9E0 /* ForecastModels.swift */; };
+		515B3D9890C065CF0493B3E7 /* VisionACARSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3289024F3C0903EF590BDF32 /* VisionACARSView.swift */; };
+		52271E26E0EDACAC5047B80E /* MeuLabCore in Frameworks */ = {isa = PBXBuildFile; productRef = 8AE19D5A1636402898DA76A9 /* MeuLabCore */; };
+		540B806D2B39414C79B4EAEC /* open_meteo_forecast.json in Resources */ = {isa = PBXBuildFile; fileRef = 63D24D9998F26CB008CF1F3F /* open_meteo_forecast.json */; };
+		5422D446644C7236083B3A3D /* system_processes.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A5DFDF7C08F9C763ABD9C5A /* system_processes.json */; };
+		551EA93DF2BA299647CB74A6 /* RadarMapSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBA59CE9A30DF02A8ED3627 /* RadarMapSnapshot.swift */; };
+		5A24034B2923A19EC5F04B1B /* ImmersiveRadarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79828E2CE74945D14B1E105C /* ImmersiveRadarModel.swift */; };
+		5B52EC2801E74D211FE97509 /* acars_history.json in Resources */ = {isa = PBXBuildFile; fileRef = 30041F57313461A785C3A5B5 /* acars_history.json */; };
+		5FAE1D7F61FC8E370FA47E3F /* Aircraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78BADAACBA14E60D755F7E2 /* Aircraft.swift */; };
+		610225FF5AE86BE2CA9D5914 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0885BD0E754B8FF8AA30F39B /* StatisticsView.swift */; };
+		6325A9C286D6A103BB3C9EBC /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04A2006FBB3F8ED5D5CE1B1 /* ImageCache.swift */; };
+		63885FDB3F7A0BDE0CFB2DBE /* disk_health.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EFA92BF577608AB2F7B7CD9 /* disk_health.json */; };
+		63EB7A656FBF3F335A5317E3 /* VisionAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF449D2D057CEED31909F214 /* VisionAPIClientTests.swift */; };
+		65CAAED7F6F8C2112D78A54D /* lab_acars_summary.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C436FA7DAD9BF42D41CA0E3 /* lab_acars_summary.json */; };
+		6B023821D8939A4F6612CBCD /* LabIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD43B89B46CE724E6B3311 /* LabIntents.swift */; };
+		6C14D5B0AE5B1DDED25DF2E9 /* Fase5AITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28AB50378EE837F2C33793D /* Fase5AITests.swift */; };
+		705AD12541CFBC079D31D13B /* RadarTerrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D2611861C579AD0CC4F644 /* RadarTerrain.swift */; };
+		73E2B5E21AFA0AA2BD4BC50F /* acars_hourly.json in Resources */ = {isa = PBXBuildFile; fileRef = CE44B2A6071C5CA36738211B /* acars_hourly.json */; };
+		74F22A3E7B38186F017B2B88 /* AnalyticsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4910D4FAA530107B109697F /* AnalyticsModels.swift */; };
+		7858BB030DB7679D570C30C8 /* alerts_triggers.json in Resources */ = {isa = PBXBuildFile; fileRef = E014D8B3930FDEFBCD9FFCB3 /* alerts_triggers.json */; };
+		786E6878A39798A9FFC24B9B /* TripTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C7A586BB3E45BB9E50966A /* TripTests.swift */; };
+		79002C07B2C9E1303DF79239 /* ImmersiveRadarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F5F7CC99B29152FAFA6F4F /* ImmersiveRadarView.swift */; };
+		7958039DE0ACD47A3043CDD9 /* SelectionAndWindowsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBCAD17DE2D9AB27880E39A /* SelectionAndWindowsTests.swift */; };
+		7AF529D701F4FFC6B2D96959 /* VisionTripModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE7101425219ADF3237D670 /* VisionTripModels.swift */; };
+		810CC0E88C4DDF683AA1A9F4 /* SectionsAndDataFixesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5694F3DFA555115AC899BCD /* SectionsAndDataFixesTests.swift */; };
+		83482203104780B7827C655E /* FrancaTerrain.json in Resources */ = {isa = PBXBuildFile; fileRef = 14E21DE070FC6A97B733E88E /* FrancaTerrain.json */; };
+		83DB4D98C5A62FA306B077DD /* Fase4IntentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C388B046766E4604D8EAE42A /* Fase4IntentTests.swift */; };
+		87F9B0BC1764E323A1F54BAD /* Geodesy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB212C38117D557BE1368FD /* Geodesy.swift */; };
+		8FC56F8E9470E2A5C6EF5C92 /* AircraftEntityFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7D7ABA8B1E6087E2B423C9 /* AircraftEntityFactory.swift */; };
+		906DAE69B9193F8532D32118 /* AlertNotificationLedger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438BAB49036ECD78C5FCD6D /* AlertNotificationLedger.swift */; };
+		998BF07B6E92C47651D36BF6 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7512A15377EAF996CEA757 /* DashboardView.swift */; };
+		9A6E4E190B89E4C55942AEC9 /* trip_itinerary.json in Resources */ = {isa = PBXBuildFile; fileRef = 86C322E0FF4BE375ED5985A7 /* trip_itinerary.json */; };
+		9AE86140EADAA695D5AB32E5 /* FlightStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B5E332BC5A97609A0903CD /* FlightStore.swift */; };
+		9B28FF78066E2CF4E0BD9A47 /* AircraftDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DF4E298105F80313D8A33A /* AircraftDetailView.swift */; };
+		9F868B477B764F01D1C93B6D /* VisionLabStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45EF5E443C582CB4CEFE6D6 /* VisionLabStore.swift */; };
+		9FACDA645E7A52CC6222151E /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB73831BB307103A1825CB92 /* Formatters.swift */; };
+		A30E4C0B30CC22C98DF56C9F /* Fase6IntentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805FF08481F6008D9A403440 /* Fase6IntentsTests.swift */; };
+		A313EB2F87B511CF7E7CDA04 /* RadarFase2EntityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C6BEA7A58271BF98402D1 /* RadarFase2EntityTests.swift */; };
+		A374059984DF2C24EB11DDE2 /* AircraftDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24AD8F820CF8986A63D1523 /* AircraftDecoder.swift */; };
+		A3F2417A4586B64EC6EFBE92 /* analytics_system.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F61BCF562EB9973E4BE123C /* analytics_system.json */; };
+		A40CBB1074A64B83B91A5660 /* RadarCloudSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17800E8DC98A62D431F7D582 /* RadarCloudSnapshot.swift */; };
+		A5EFAE6F293A44CE74EDEB0C /* system_network.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A7605608C2DAED82913BF17 /* system_network.json */; };
+		A72EDEC3BD9A299F2513E5AB /* Fase5ImmersiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD508C5683B746396D47A9DF /* Fase5ImmersiveTests.swift */; };
+		A90173EEB931D74191ED7F31 /* alerts_rules.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BCC397515152F8115CB1E73 /* alerts_rules.json */; };
+		AB7BF7969682531F99C3D9EE /* RadarFase1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0045EFB94EFEC48F5F68305 /* RadarFase1Tests.swift */; };
+		B32BE3278E2600381090D890 /* CPUHistoryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229DCE4D300B22F057128378 /* CPUHistoryModels.swift */; };
+		B521EB9F3C222425A9CAF283 /* RadarSceneRegressionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C516EAF377ED2BC419C375 /* RadarSceneRegressionTests.swift */; };
+		B657FDB924587E31F59C6CA1 /* acars_summary.json in Resources */ = {isa = PBXBuildFile; fileRef = 128C76CF3A1E0DC10BF67123 /* acars_summary.json */; };
+		B6A538A8B53D858D9607713F /* ImmersiveRadarToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D013DDF358C3916BBCFE51E3 /* ImmersiveRadarToggleButton.swift */; };
+		BD31126782E480BF995A09C3 /* Fase5SharePlayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F95C805106CFAA9C3356B6 /* Fase5SharePlayTests.swift */; };
+		BD3B2E138803EA82F399142A /* MeuLabVisionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CEA0029006525D7AFDFDB7 /* MeuLabVisionUITests.swift */; };
+		C4041E0DE8B5C39D0D285F90 /* MeuLabVisionWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8A785CE2354BF3528CAB49 /* MeuLabVisionWidgets.swift */; };
+		C46F0894B6A166E22BC4A4FD /* SeriesParseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8811881C49734E3315336ED3 /* SeriesParseTests.swift */; };
+		C56F2D98BC9BC1455B98ADBC /* alert_trigger.json in Resources */ = {isa = PBXBuildFile; fileRef = C8FA44B981FA2567D8714CF7 /* alert_trigger.json */; };
+		C58B099D1641484B220E8804 /* MeuLabVisionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C21742CD0B97DA602C77BB /* MeuLabVisionApp.swift */; };
+		C65E9EF569D58B0B4192F9EF /* VisionDeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EF0D2DBBA382D61022A9E1 /* VisionDeepLink.swift */; };
+		C88C2B68C4F368E926625438 /* RadarSurfaceFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E43E7B005CB609F69FF14F3 /* RadarSurfaceFeed.swift */; };
+		CB4D8B25C18D82F1EE16D0B7 /* acars_messages.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B02A6334610E78E4C6458C1 /* acars_messages.json */; };
+		CC400623A4C14FAF288C9D5C /* ReadsbAircraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C1BE4695C0F89D9F39ABDF /* ReadsbAircraft.swift */; };
+		CCAEAF14C94D30275A9EECD2 /* RadarMeshBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D0A71C70204CAA47C68A9 /* RadarMeshBuilder.swift */; };
+		CE4E0B6AACF87D40FB01B83A /* VisionAlertNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FA2A5A43B46D1DA724E1EA /* VisionAlertNotifier.swift */; };
+		D054DA33719E146053D60791 /* RadarOrnamentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAF424F35A24C79C84637C8 /* RadarOrnamentView.swift */; };
+		D216524EB92377C87568AE41 /* RadarFlightFactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5639218BB8D159D061AA78FE /* RadarFlightFactsTests.swift */; };
+		D31C5C21B7AB098923F16506 /* RadarFase2VolumeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DACC5E6CFB9057FEF36A1C /* RadarFase2VolumeTests.swift */; };
+		D480DF0CE34E3F2575A936F8 /* LabFase1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60237E9205773A8E5C1AF8D3 /* LabFase1Tests.swift */; };
+		D488718649FC85EA69C8725A /* readsb_aircraft.json in Resources */ = {isa = PBXBuildFile; fileRef = 26A66FA0CA2F21F10D922438 /* readsb_aircraft.json */; };
+		D51E07FE486F10F462AFC52F /* ADSBClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014024C7FB954B89DABF4E7F /* ADSBClient.swift */; };
+		D522C1D5F6CD01DD00A422BB /* PollingScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D063C0D36F758F3C361D5E3C /* PollingScheduler.swift */; };
+		D8DABF4859AC8837FAD83D9D /* MeuLabCoreExports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8854BF6E26C3DC09908720B3 /* MeuLabCoreExports.swift */; };
+		DB880D7DBFBA5E20C4AC218F /* DockerLogsWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90000725D9AB8FC9892ED8DD /* DockerLogsWindowView.swift */; };
+		DEDD1A652B5B86EF13328F67 /* VisionSystemExtrasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20377CD2232529498DA62CA /* VisionSystemExtrasView.swift */; };
+		E07B4D7A37FD01EA3D655B21 /* VisionInsightPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A51B5DB7FE84FC92C3DB30 /* VisionInsightPrompt.swift */; };
+		E30432825A3DC1235A0C61AD /* VisionInfraExtrasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD518AB77A4ECD9851EFC67 /* VisionInfraExtrasView.swift */; };
+		E3D351D33287D997397927A1 /* VisionAnalyticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12307CBAEE10DEC9239F07D /* VisionAnalyticsView.swift */; };
+		E464DBF19AF9067057BC9DE7 /* RadarFlightFacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29214D0E0A41FD4BE592EB61 /* RadarFlightFacts.swift */; };
+		E5FF6228D73C527584B647A3 /* CoreDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA743C2C22E1365DB7AE0CE /* CoreDecoderTests.swift */; };
+		EBEEF351026E4540ED90DA21 /* RadarSharePlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E4691D51EE22F440EF3220 /* RadarSharePlayButton.swift */; };
+		EC1058F0B4FD8E0EC9FFBC74 /* FrancaTerrain.bin in Resources */ = {isa = PBXBuildFile; fileRef = AA52EB85F1C3474B96126662 /* FrancaTerrain.bin */; };
+		EE1D10F2E41881DCD1550B95 /* acars_detail.json in Resources */ = {isa = PBXBuildFile; fileRef = F0450D2864345AE652568B82 /* acars_detail.json */; };
+		EE8DF83FEC3CA8B94E85334E /* InfraModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488D2ABBA4B1EC75E45CDE7F /* InfraModels.swift */; };
+		EF6F37B535F7A458FBB9E36A /* MeuLabVisionWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2A4A3085F97E4216A35A3B0A /* MeuLabVisionWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F142CC723A228A4A5620BDD2 /* VisionSectionContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CED36F105CDE99081E5A25D /* VisionSectionContent.swift */; };
+		F4846CCF6F6F5F70BEF219B4 /* RadarSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E926EE03F39E50855BF21C1 /* RadarSettings.swift */; };
+		F48641E49AE54E0F0FFFE307 /* LabStoreModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25F967ABCE258D16D57D1DE /* LabStoreModels.swift */; };
+		F655E7ABFDE329D2E5CB44E4 /* VisionIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98872C53C77B2B32F941A848 /* VisionIntents.swift */; };
+		FBC5F0FC6B807D18EAA97CDF /* ACARSModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9269E0846E89A9128407CB /* ACARSModels.swift */; };
+		FCE1548B5158C660DA856FF1 /* RadarSharePlayCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB282DE5C51C2B51C3568B5 /* RadarSharePlayCoordinator.swift */; };
+		FCE9AAB88710C316EB463889 /* ImmersiveRadarState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF1ED7A55FD092AC7A3C06 /* ImmersiveRadarState.swift */; };
+		FF0B010EE2C6B30E10621E8F /* Fase6AudioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F4E5D74EA3B188F63279AC /* Fase6AudioTests.swift */; };
+		FF1622A0D420FEC92FA669A6 /* SpatialCardStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833E6EA46C26A6A57CB66C56 /* SpatialCardStyle.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2041FF5945E2C5F519A00FAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75CF483D513D39DDE178B003 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C872AFFA6CFC3CBFC9E5A196;
+			remoteInfo = MeuLabVisionWidgets;
+		};
+		BE1D722FDF4025635E62EE96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75CF483D513D39DDE178B003 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2B9A3E5319CE9E6EBB750FB;
+			remoteInfo = MeuLabVision;
+		};
+		C76AEC98C0FE7CCAF5175068 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75CF483D513D39DDE178B003 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2B9A3E5319CE9E6EBB750FB;
+			remoteInfo = MeuLabVision;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		08BD7DCE0150C7085898C34A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EF6F37B535F7A458FBB9E36A /* MeuLabVisionWidgets.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		014024C7FB954B89DABF4E7F /* ADSBClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADSBClient.swift; sourceTree = "<group>"; };
+		02EE6344AF837F933C904F16 /* RadarMapWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarMapWindowView.swift; sourceTree = "<group>"; };
+		02F95C805106CFAA9C3356B6 /* Fase5SharePlayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fase5SharePlayTests.swift; sourceTree = "<group>"; };
+		04FB0A74FC27B7CB0D03BB57 /* VisionRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionRootView.swift; sourceTree = "<group>"; };
+		0885BD0E754B8FF8AA30F39B /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		0AB282DE5C51C2B51C3568B5 /* RadarSharePlayCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarSharePlayCoordinator.swift; sourceTree = "<group>"; };
+		0EFA92BF577608AB2F7B7CD9 /* disk_health.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = disk_health.json; sourceTree = "<group>"; };
+		118419945BC6D621DEC9C008 /* WidgetSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetSnapshot.swift; sourceTree = "<group>"; };
+		128C76CF3A1E0DC10BF67123 /* acars_summary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = acars_summary.json; sourceTree = "<group>"; };
+		14E21DE070FC6A97B733E88E /* FrancaTerrain.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FrancaTerrain.json; sourceTree = "<group>"; };
+		15CD7368470D6486206AE891 /* VisionInsightViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionInsightViews.swift; sourceTree = "<group>"; };
+		16E4691D51EE22F440EF3220 /* RadarSharePlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarSharePlayButton.swift; sourceTree = "<group>"; };
+		17800E8DC98A62D431F7D582 /* RadarCloudSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarCloudSnapshot.swift; sourceTree = "<group>"; };
+		1C436FA7DAD9BF42D41CA0E3 /* lab_acars_summary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = lab_acars_summary.json; sourceTree = "<group>"; };
+		1FD220DAEFBAC83B26C07482 /* RadarGroupActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarGroupActivity.swift; sourceTree = "<group>"; };
+		229DCE4D300B22F057128378 /* CPUHistoryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPUHistoryModels.swift; sourceTree = "<group>"; };
+		251355A8FE1EDEF243E5470C /* AlertEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertEntity.swift; sourceTree = "<group>"; };
+		26A66FA0CA2F21F10D922438 /* readsb_aircraft.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = readsb_aircraft.json; sourceTree = "<group>"; };
+		29214D0E0A41FD4BE592EB61 /* RadarFlightFacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarFlightFacts.swift; sourceTree = "<group>"; };
+		2A4A3085F97E4216A35A3B0A /* MeuLabVisionWidgets.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = MeuLabVisionWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CB212C38117D557BE1368FD /* Geodesy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geodesy.swift; sourceTree = "<group>"; };
+		2E394CBF4E52652A1B64FB31 /* infra_metrics.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = infra_metrics.json; sourceTree = "<group>"; };
+		2F61BCF562EB9973E4BE123C /* analytics_system.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = analytics_system.json; sourceTree = "<group>"; };
+		30041F57313461A785C3A5B5 /* acars_history.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = acars_history.json; sourceTree = "<group>"; };
+		323EC8EAB62D0EA47F68B422 /* VisionAlertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionAlertsView.swift; sourceTree = "<group>"; };
+		3241B4C977DE0D17B88D0E4E /* VisionInsightService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionInsightService.swift; sourceTree = "<group>"; };
+		3289024F3C0903EF590BDF32 /* VisionACARSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionACARSView.swift; sourceTree = "<group>"; };
+		334637CF7696A37F5D844947 /* systemd_status.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = systemd_status.json; sourceTree = "<group>"; };
+		34FA2A5A43B46D1DA724E1EA /* VisionAlertNotifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionAlertNotifier.swift; sourceTree = "<group>"; };
+		353A29888808BCA53A0A912F /* LineChartAccessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartAccessibility.swift; sourceTree = "<group>"; };
+		388DF1586923438AD45B83A6 /* Fase4WidgetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fase4WidgetTests.swift; sourceTree = "<group>"; };
+		38B6023236944ED1EC97BD1F /* docker_status.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = docker_status.json; sourceTree = "<group>"; };
+		3A5DFDF7C08F9C763ABD9C5A /* system_processes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = system_processes.json; sourceTree = "<group>"; };
+		3A7605608C2DAED82913BF17 /* system_network.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = system_network.json; sourceTree = "<group>"; };
+		3AA743C2C22E1365DB7AE0CE /* CoreDecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDecoderTests.swift; sourceTree = "<group>"; };
+		3B29A483C798A10CDC8635B1 /* system_partitions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = system_partitions.json; sourceTree = "<group>"; };
+		3BF92013770CCEC57577C947 /* RadarSharedSpaceRelay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarSharedSpaceRelay.swift; sourceTree = "<group>"; };
+		3E0835D06104ACE709028903 /* RadarSyncModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarSyncModel.swift; sourceTree = "<group>"; };
+		3E43E7B005CB609F69FF14F3 /* RadarSurfaceFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarSurfaceFeed.swift; sourceTree = "<group>"; };
+		40B5E332BC5A97609A0903CD /* FlightStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightStore.swift; sourceTree = "<group>"; };
+		417397A8570E58CB17C55A2A /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		41C516EAF377ED2BC419C375 /* RadarSceneRegressionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarSceneRegressionTests.swift; sourceTree = "<group>"; };
+		465C6BEA7A58271BF98402D1 /* RadarFase2EntityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarFase2EntityTests.swift; sourceTree = "<group>"; };
+		488D2ABBA4B1EC75E45CDE7F /* InfraModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfraModels.swift; sourceTree = "<group>"; };
+		4BCC397515152F8115CB1E73 /* alerts_rules.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = alerts_rules.json; sourceTree = "<group>"; };
+		4C94C430B73951E1B2BFC637 /* AircraftMotionSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircraftMotionSystem.swift; sourceTree = "<group>"; };
+		4CE7101425219ADF3237D670 /* VisionTripModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionTripModels.swift; sourceTree = "<group>"; };
+		4D0D0A71C70204CAA47C68A9 /* RadarMeshBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarMeshBuilder.swift; sourceTree = "<group>"; };
+		4D7D7ABA8B1E6087E2B423C9 /* AircraftEntityFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircraftEntityFactory.swift; sourceTree = "<group>"; };
+		4E926EE03F39E50855BF21C1 /* RadarSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarSettings.swift; sourceTree = "<group>"; };
+		54FF029C1450C35C777B29D5 /* AlertChimePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertChimePlayer.swift; sourceTree = "<group>"; };
+		5639218BB8D159D061AA78FE /* RadarFlightFactsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarFlightFactsTests.swift; sourceTree = "<group>"; };
+		5C9269E0846E89A9128407CB /* ACARSModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACARSModels.swift; sourceTree = "<group>"; };
+		5D2CA831D3B0F99ABE219A5D /* HourDayBinning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourDayBinning.swift; sourceTree = "<group>"; };
+		60237E9205773A8E5C1AF8D3 /* LabFase1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabFase1Tests.swift; sourceTree = "<group>"; };
+		61F4E5D74EA3B188F63279AC /* Fase6AudioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fase6AudioTests.swift; sourceTree = "<group>"; };
+		62A51B5DB7FE84FC92C3DB30 /* VisionInsightPrompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionInsightPrompt.swift; sourceTree = "<group>"; };
+		63C7A586BB3E45BB9E50966A /* TripTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTests.swift; sourceTree = "<group>"; };
+		63D24D9998F26CB008CF1F3F /* open_meteo_forecast.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = open_meteo_forecast.json; sourceTree = "<group>"; };
+		6B02A6334610E78E4C6458C1 /* acars_messages.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = acars_messages.json; sourceTree = "<group>"; };
+		6B4EBECF33C0FBBFC6EFCF34 /* RadarSceneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarSceneController.swift; sourceTree = "<group>"; };
+		76779DBD87D19D38EA9AA887 /* Fase3BTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fase3BTests.swift; sourceTree = "<group>"; };
+		76C1BE4695C0F89D9F39ABDF /* ReadsbAircraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadsbAircraft.swift; sourceTree = "<group>"; };
+		79828E2CE74945D14B1E105C /* ImmersiveRadarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveRadarModel.swift; sourceTree = "<group>"; };
+		7CFD43B89B46CE724E6B3311 /* LabIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabIntents.swift; sourceTree = "<group>"; };
+		7F847C35701F2EBCB53ED430 /* ADSBDecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADSBDecoderTests.swift; sourceTree = "<group>"; };
+		805FF08481F6008D9A403440 /* Fase6IntentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fase6IntentsTests.swift; sourceTree = "<group>"; };
+		81DED9957614553FFEBC4064 /* ACARSMessageWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACARSMessageWindow.swift; sourceTree = "<group>"; };
+		833E6EA46C26A6A57CB66C56 /* SpatialCardStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpatialCardStyle.swift; sourceTree = "<group>"; };
+		8438BAB49036ECD78C5FCD6D /* AlertNotificationLedger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertNotificationLedger.swift; sourceTree = "<group>"; };
+		8692472ED671C1F9A1EA6B62 /* MeuLabVisionUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = MeuLabVisionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		86C322E0FF4BE375ED5985A7 /* trip_itinerary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = trip_itinerary.json; sourceTree = "<group>"; };
+		8811881C49734E3315336ED3 /* SeriesParseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesParseTests.swift; sourceTree = "<group>"; };
+		883CEE63906ED83C6EBA5807 /* MeuLabVisionTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = MeuLabVisionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8854BF6E26C3DC09908720B3 /* MeuLabCoreExports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeuLabCoreExports.swift; sourceTree = "<group>"; };
+		88C21742CD0B97DA602C77BB /* MeuLabVisionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeuLabVisionApp.swift; sourceTree = "<group>"; };
+		88EAC4BC60F094A180DC6FF3 /* AlertModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertModels.swift; sourceTree = "<group>"; };
+		890B7D0FCBCF7A3DBD5828AA /* RadarVolumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarVolumeView.swift; sourceTree = "<group>"; };
+		8916CBBE95B5EE9E87B2A77C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		895E11E6E35569B04C597870 /* VisionFlightEnrichmentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionFlightEnrichmentService.swift; sourceTree = "<group>"; };
+		89D74454945267E0752272A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8ADE6E724B3F1F57A78F767E /* analytics_adsb.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = analytics_adsb.json; sourceTree = "<group>"; };
+		8B5C91BEB1366C4620C091A2 /* VisionFlightSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionFlightSearchView.swift; sourceTree = "<group>"; };
+		8CED36F105CDE99081E5A25D /* VisionSectionContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionSectionContent.swift; sourceTree = "<group>"; };
+		90000725D9AB8FC9892ED8DD /* DockerLogsWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DockerLogsWindowView.swift; sourceTree = "<group>"; };
+		9407B510605FFA7F5118CB91 /* AircraftListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircraftListView.swift; sourceTree = "<group>"; };
+		94D2611861C579AD0CC4F644 /* RadarTerrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarTerrain.swift; sourceTree = "<group>"; };
+		98872C53C77B2B32F941A848 /* VisionIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionIntents.swift; sourceTree = "<group>"; };
+		99C9BC96253CFA39D76FCC84 /* GeodesyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeodesyTests.swift; sourceTree = "<group>"; };
+		9BA255E02A7363A85D30DE38 /* RadarPingPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarPingPlayer.swift; sourceTree = "<group>"; };
+		A13884F9C81AF29ACB5D4D4E /* VisionSeriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionSeriesView.swift; sourceTree = "<group>"; };
+		A6DACC5E6CFB9057FEF36A1C /* RadarFase2VolumeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarFase2VolumeTests.swift; sourceTree = "<group>"; };
+		AA52EB85F1C3474B96126662 /* FrancaTerrain.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = FrancaTerrain.bin; sourceTree = "<group>"; };
+		AD3F781CCABB04268595B4E1 /* VisionTripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionTripView.swift; sourceTree = "<group>"; };
+		AD508C5683B746396D47A9DF /* Fase5ImmersiveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fase5ImmersiveTests.swift; sourceTree = "<group>"; };
+		B24AD8F820CF8986A63D1523 /* AircraftDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircraftDecoder.swift; sourceTree = "<group>"; };
+		B28AB50378EE837F2C33793D /* Fase5AITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fase5AITests.swift; sourceTree = "<group>"; };
+		B2CEA0029006525D7AFDFDB7 /* MeuLabVisionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeuLabVisionUITests.swift; sourceTree = "<group>"; };
+		B2F5F7CC99B29152FAFA6F4F /* ImmersiveRadarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveRadarView.swift; sourceTree = "<group>"; };
+		B3DF4E298105F80313D8A33A /* AircraftDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircraftDetailView.swift; sourceTree = "<group>"; };
+		B5694F3DFA555115AC899BCD /* SectionsAndDataFixesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsAndDataFixesTests.swift; sourceTree = "<group>"; };
+		BA3A16F258CDBF766AE5C9E0 /* ForecastModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastModels.swift; sourceTree = "<group>"; };
+		BDB23E21E5A36BFB3513B249 /* MeuLabCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MeuLabCore; path = MeuLabCore; sourceTree = SOURCE_ROOT; };
+		BDD518AB77A4ECD9851EFC67 /* VisionInfraExtrasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionInfraExtrasView.swift; sourceTree = "<group>"; };
+		BE8A785CE2354BF3528CAB49 /* MeuLabVisionWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeuLabVisionWidgets.swift; sourceTree = "<group>"; };
+		C10A8DA0BCC6D3794D46C900 /* MeuLabVision.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = MeuLabVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C388B046766E4604D8EAE42A /* Fase4IntentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fase4IntentTests.swift; sourceTree = "<group>"; };
+		C8FA44B981FA2567D8714CF7 /* alert_trigger.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = alert_trigger.json; sourceTree = "<group>"; };
+		CCAF424F35A24C79C84637C8 /* RadarOrnamentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarOrnamentView.swift; sourceTree = "<group>"; };
+		CE44B2A6071C5CA36738211B /* acars_hourly.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = acars_hourly.json; sourceTree = "<group>"; };
+		CFBA59CE9A30DF02A8ED3627 /* RadarMapSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarMapSnapshot.swift; sourceTree = "<group>"; };
+		D013DDF358C3916BBCFE51E3 /* ImmersiveRadarToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveRadarToggleButton.swift; sourceTree = "<group>"; };
+		D04A2006FBB3F8ED5D5CE1B1 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		D063C0D36F758F3C361D5E3C /* PollingScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollingScheduler.swift; sourceTree = "<group>"; };
+		D4910D4FAA530107B109697F /* AnalyticsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsModels.swift; sourceTree = "<group>"; };
+		D603585C344EE015946C4187 /* Fase3ATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fase3ATests.swift; sourceTree = "<group>"; };
+		D636CEEB3D767109A2DA62C4 /* WidgetSnapshotWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetSnapshotWriter.swift; sourceTree = "<group>"; };
+		D78BADAACBA14E60D755F7E2 /* Aircraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aircraft.swift; sourceTree = "<group>"; };
+		D9A7A04A23E1F517DF0DD5AF /* VisionWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionWeatherView.swift; sourceTree = "<group>"; };
+		DFBCAD17DE2D9AB27880E39A /* SelectionAndWindowsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionAndWindowsTests.swift; sourceTree = "<group>"; };
+		E014D8B3930FDEFBCD9FFCB3 /* alerts_triggers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = alerts_triggers.json; sourceTree = "<group>"; };
+		E20377CD2232529498DA62CA /* VisionSystemExtrasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionSystemExtrasView.swift; sourceTree = "<group>"; };
+		EC1111ADC8BA2A00F1A0B4A6 /* VisionAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionAPIClient.swift; sourceTree = "<group>"; };
+		EE987090C6DB7FEE5C03B651 /* SpatialAudioSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpatialAudioSession.swift; sourceTree = "<group>"; };
+		F0045EFB94EFEC48F5F68305 /* RadarFase1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarFase1Tests.swift; sourceTree = "<group>"; };
+		F0450D2864345AE652568B82 /* acars_detail.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = acars_detail.json; sourceTree = "<group>"; };
+		F12307CBAEE10DEC9239F07D /* VisionAnalyticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionAnalyticsView.swift; sourceTree = "<group>"; };
+		F25F967ABCE258D16D57D1DE /* LabStoreModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabStoreModels.swift; sourceTree = "<group>"; };
+		F45EF5E443C582CB4CEFE6D6 /* VisionLabStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionLabStore.swift; sourceTree = "<group>"; };
+		F7EF0D2DBBA382D61022A9E1 /* VisionDeepLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionDeepLink.swift; sourceTree = "<group>"; };
+		F86AEAD6B255B63B5FD558E7 /* ReviewCleanupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCleanupTests.swift; sourceTree = "<group>"; };
+		FADF1ED7A55FD092AC7A3C06 /* ImmersiveRadarState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveRadarState.swift; sourceTree = "<group>"; };
+		FB73831BB307103A1825CB92 /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		FB7512A15377EAF996CEA757 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		FF449D2D057CEED31909F214 /* VisionAPIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionAPIClientTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D8A640E7CF70E2055FF4400 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52271E26E0EDACAC5047B80E /* MeuLabCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02B8A299329D9F094ABE3803 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				B2CEA0029006525D7AFDFDB7 /* MeuLabVisionUITests.swift */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		03A9214647F4630D22CFDAF4 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				417397A8570E58CB17C55A2A /* MockURLProtocol.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		0443F096FAC8026FC142F84E /* Immersive */ = {
+			isa = PBXGroup;
+			children = (
+				79828E2CE74945D14B1E105C /* ImmersiveRadarModel.swift */,
+				FADF1ED7A55FD092AC7A3C06 /* ImmersiveRadarState.swift */,
+				D013DDF358C3916BBCFE51E3 /* ImmersiveRadarToggleButton.swift */,
+				B2F5F7CC99B29152FAFA6F4F /* ImmersiveRadarView.swift */,
+				9BA255E02A7363A85D30DE38 /* RadarPingPlayer.swift */,
+			);
+			path = Immersive;
+			sourceTree = "<group>";
+		};
+		09FD6D3E837E06CFE717F129 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				118419945BC6D621DEC9C008 /* WidgetSnapshot.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		0A12C3C2A39C472240E1A7DD /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				8438BAB49036ECD78C5FCD6D /* AlertNotificationLedger.swift */,
+				34FA2A5A43B46D1DA724E1EA /* VisionAlertNotifier.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		0A95AA2BB131B805F6BF6474 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				F0450D2864345AE652568B82 /* acars_detail.json */,
+				30041F57313461A785C3A5B5 /* acars_history.json */,
+				CE44B2A6071C5CA36738211B /* acars_hourly.json */,
+				6B02A6334610E78E4C6458C1 /* acars_messages.json */,
+				128C76CF3A1E0DC10BF67123 /* acars_summary.json */,
+				C8FA44B981FA2567D8714CF7 /* alert_trigger.json */,
+				4BCC397515152F8115CB1E73 /* alerts_rules.json */,
+				E014D8B3930FDEFBCD9FFCB3 /* alerts_triggers.json */,
+				8ADE6E724B3F1F57A78F767E /* analytics_adsb.json */,
+				2F61BCF562EB9973E4BE123C /* analytics_system.json */,
+				0EFA92BF577608AB2F7B7CD9 /* disk_health.json */,
+				38B6023236944ED1EC97BD1F /* docker_status.json */,
+				2E394CBF4E52652A1B64FB31 /* infra_metrics.json */,
+				1C436FA7DAD9BF42D41CA0E3 /* lab_acars_summary.json */,
+				63D24D9998F26CB008CF1F3F /* open_meteo_forecast.json */,
+				26A66FA0CA2F21F10D922438 /* readsb_aircraft.json */,
+				3A7605608C2DAED82913BF17 /* system_network.json */,
+				3B29A483C798A10CDC8635B1 /* system_partitions.json */,
+				3A5DFDF7C08F9C763ABD9C5A /* system_processes.json */,
+				334637CF7696A37F5D844947 /* systemd_status.json */,
+				86C322E0FF4BE375ED5985A7 /* trip_itinerary.json */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		1C35993A9DA37E5909DD6AF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C10A8DA0BCC6D3794D46C900 /* MeuLabVision.app */,
+				883CEE63906ED83C6EBA5807 /* MeuLabVisionTests.xctest */,
+				8692472ED671C1F9A1EA6B62 /* MeuLabVisionUITests.xctest */,
+				2A4A3085F97E4216A35A3B0A /* MeuLabVisionWidgets.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C0B5FBA269DCE99EAB25A09 /* Lab */ = {
+			isa = PBXGroup;
+			children = (
+				90000725D9AB8FC9892ED8DD /* DockerLogsWindowView.swift */,
+				353A29888808BCA53A0A912F /* LineChartAccessibility.swift */,
+				833E6EA46C26A6A57CB66C56 /* SpatialCardStyle.swift */,
+				3289024F3C0903EF590BDF32 /* VisionACARSView.swift */,
+				323EC8EAB62D0EA47F68B422 /* VisionAlertsView.swift */,
+				F12307CBAEE10DEC9239F07D /* VisionAnalyticsView.swift */,
+				BDD518AB77A4ECD9851EFC67 /* VisionInfraExtrasView.swift */,
+				A13884F9C81AF29ACB5D4D4E /* VisionSeriesView.swift */,
+				E20377CD2232529498DA62CA /* VisionSystemExtrasView.swift */,
+				D9A7A04A23E1F517DF0DD5AF /* VisionWeatherView.swift */,
+			);
+			path = Lab;
+			sourceTree = "<group>";
+		};
+		3063FE5541780C3FDB967390 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				BE8A785CE2354BF3528CAB49 /* MeuLabVisionWidgets.swift */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		3C05E8F2C79E9980ED36AA02 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				88C21742CD0B97DA602C77BB /* MeuLabVisionApp.swift */,
+				F45EF5E443C582CB4CEFE6D6 /* VisionLabStore.swift */,
+				04FB0A74FC27B7CB0D03BB57 /* VisionRootView.swift */,
+				ECC6D20B829479FA13AEC24C /* AI */,
+				7DFD2E94E05E4E7126A09448 /* Audio */,
+				67D4AF0AC3628A13ABF02DBA /* Core */,
+				0443F096FAC8026FC142F84E /* Immersive */,
+				A8ED42FF26D6F97386E7CE8C /* Intents */,
+				2C0B5FBA269DCE99EAB25A09 /* Lab */,
+				0A12C3C2A39C472240E1A7DD /* Notifications */,
+				7E587E4860A60D3DC2A009F3 /* Radar */,
+				EE117FF98597013B6E226DB4 /* SharePlay */,
+				F0E2102EED1F8E75103ADCC0 /* Shell */,
+				90B0FB59094F3BC5DE47C35C /* Trip */,
+				88EFF6B16942BCAA84E7982C /* Widgets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		61CA4AAEAA28B7D7B6598724 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7F847C35701F2EBCB53ED430 /* ADSBDecoderTests.swift */,
+				3AA743C2C22E1365DB7AE0CE /* CoreDecoderTests.swift */,
+				D603585C344EE015946C4187 /* Fase3ATests.swift */,
+				76779DBD87D19D38EA9AA887 /* Fase3BTests.swift */,
+				C388B046766E4604D8EAE42A /* Fase4IntentTests.swift */,
+				388DF1586923438AD45B83A6 /* Fase4WidgetTests.swift */,
+				B28AB50378EE837F2C33793D /* Fase5AITests.swift */,
+				AD508C5683B746396D47A9DF /* Fase5ImmersiveTests.swift */,
+				02F95C805106CFAA9C3356B6 /* Fase5SharePlayTests.swift */,
+				61F4E5D74EA3B188F63279AC /* Fase6AudioTests.swift */,
+				805FF08481F6008D9A403440 /* Fase6IntentsTests.swift */,
+				99C9BC96253CFA39D76FCC84 /* GeodesyTests.swift */,
+				60237E9205773A8E5C1AF8D3 /* LabFase1Tests.swift */,
+				F0045EFB94EFEC48F5F68305 /* RadarFase1Tests.swift */,
+				465C6BEA7A58271BF98402D1 /* RadarFase2EntityTests.swift */,
+				A6DACC5E6CFB9057FEF36A1C /* RadarFase2VolumeTests.swift */,
+				5639218BB8D159D061AA78FE /* RadarFlightFactsTests.swift */,
+				41C516EAF377ED2BC419C375 /* RadarSceneRegressionTests.swift */,
+				F86AEAD6B255B63B5FD558E7 /* ReviewCleanupTests.swift */,
+				B5694F3DFA555115AC899BCD /* SectionsAndDataFixesTests.swift */,
+				DFBCAD17DE2D9AB27880E39A /* SelectionAndWindowsTests.swift */,
+				8811881C49734E3315336ED3 /* SeriesParseTests.swift */,
+				63C7A586BB3E45BB9E50966A /* TripTests.swift */,
+				FF449D2D057CEED31909F214 /* VisionAPIClientTests.swift */,
+				0A95AA2BB131B805F6BF6474 /* Fixtures */,
+				03A9214647F4630D22CFDAF4 /* Support */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		67D4AF0AC3628A13ABF02DBA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5C9269E0846E89A9128407CB /* ACARSModels.swift */,
+				88EAC4BC60F094A180DC6FF3 /* AlertModels.swift */,
+				D4910D4FAA530107B109697F /* AnalyticsModels.swift */,
+				229DCE4D300B22F057128378 /* CPUHistoryModels.swift */,
+				BA3A16F258CDBF766AE5C9E0 /* ForecastModels.swift */,
+				FB73831BB307103A1825CB92 /* Formatters.swift */,
+				D04A2006FBB3F8ED5D5CE1B1 /* ImageCache.swift */,
+				488D2ABBA4B1EC75E45CDE7F /* InfraModels.swift */,
+				F25F967ABCE258D16D57D1DE /* LabStoreModels.swift */,
+				8854BF6E26C3DC09908720B3 /* MeuLabCoreExports.swift */,
+				D063C0D36F758F3C361D5E3C /* PollingScheduler.swift */,
+				EC1111ADC8BA2A00F1A0B4A6 /* VisionAPIClient.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		7DFD2E94E05E4E7126A09448 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				54FF029C1450C35C777B29D5 /* AlertChimePlayer.swift */,
+				EE987090C6DB7FEE5C03B651 /* SpatialAudioSession.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		7E587E4860A60D3DC2A009F3 /* Radar */ = {
+			isa = PBXGroup;
+			children = (
+				014024C7FB954B89DABF4E7F /* ADSBClient.swift */,
+				D78BADAACBA14E60D755F7E2 /* Aircraft.swift */,
+				B24AD8F820CF8986A63D1523 /* AircraftDecoder.swift */,
+				B3DF4E298105F80313D8A33A /* AircraftDetailView.swift */,
+				4D7D7ABA8B1E6087E2B423C9 /* AircraftEntityFactory.swift */,
+				9407B510605FFA7F5118CB91 /* AircraftListView.swift */,
+				4C94C430B73951E1B2BFC637 /* AircraftMotionSystem.swift */,
+				FB7512A15377EAF996CEA757 /* DashboardView.swift */,
+				40B5E332BC5A97609A0903CD /* FlightStore.swift */,
+				2CB212C38117D557BE1368FD /* Geodesy.swift */,
+				17800E8DC98A62D431F7D582 /* RadarCloudSnapshot.swift */,
+				29214D0E0A41FD4BE592EB61 /* RadarFlightFacts.swift */,
+				CFBA59CE9A30DF02A8ED3627 /* RadarMapSnapshot.swift */,
+				02EE6344AF837F933C904F16 /* RadarMapWindowView.swift */,
+				4D0D0A71C70204CAA47C68A9 /* RadarMeshBuilder.swift */,
+				CCAF424F35A24C79C84637C8 /* RadarOrnamentView.swift */,
+				6B4EBECF33C0FBBFC6EFCF34 /* RadarSceneController.swift */,
+				4E926EE03F39E50855BF21C1 /* RadarSettings.swift */,
+				3E43E7B005CB609F69FF14F3 /* RadarSurfaceFeed.swift */,
+				94D2611861C579AD0CC4F644 /* RadarTerrain.swift */,
+				890B7D0FCBCF7A3DBD5828AA /* RadarVolumeView.swift */,
+				76C1BE4695C0F89D9F39ABDF /* ReadsbAircraft.swift */,
+				8916CBBE95B5EE9E87B2A77C /* SettingsView.swift */,
+				0885BD0E754B8FF8AA30F39B /* StatisticsView.swift */,
+				895E11E6E35569B04C597870 /* VisionFlightEnrichmentService.swift */,
+				8B5C91BEB1366C4620C091A2 /* VisionFlightSearchView.swift */,
+			);
+			path = Radar;
+			sourceTree = "<group>";
+		};
+		88EFF6B16942BCAA84E7982C /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				D636CEEB3D767109A2DA62C4 /* WidgetSnapshotWriter.swift */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		8F82F94BA263833920F0320B = {
+			isa = PBXGroup;
+			children = (
+				89D74454945267E0752272A9 /* Assets.xcassets */,
+				A4376F95DD06DF949446CA0B /* Packages */,
+				B5624B13398CFAFF46DA4192 /* Resources */,
+				09FD6D3E837E06CFE717F129 /* Shared */,
+				3C05E8F2C79E9980ED36AA02 /* Sources */,
+				61CA4AAEAA28B7D7B6598724 /* Tests */,
+				02B8A299329D9F094ABE3803 /* UITests */,
+				3063FE5541780C3FDB967390 /* Widgets */,
+				1C35993A9DA37E5909DD6AF8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		90B0FB59094F3BC5DE47C35C /* Trip */ = {
+			isa = PBXGroup;
+			children = (
+				4CE7101425219ADF3237D670 /* VisionTripModels.swift */,
+				AD3F781CCABB04268595B4E1 /* VisionTripView.swift */,
+			);
+			path = Trip;
+			sourceTree = "<group>";
+		};
+		A4376F95DD06DF949446CA0B /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				BDB23E21E5A36BFB3513B249 /* MeuLabCore */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		A8ED42FF26D6F97386E7CE8C /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				251355A8FE1EDEF243E5470C /* AlertEntity.swift */,
+				7CFD43B89B46CE724E6B3311 /* LabIntents.swift */,
+				F7EF0D2DBBA382D61022A9E1 /* VisionDeepLink.swift */,
+				98872C53C77B2B32F941A848 /* VisionIntents.swift */,
+			);
+			path = Intents;
+			sourceTree = "<group>";
+		};
+		B5624B13398CFAFF46DA4192 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA52EB85F1C3474B96126662 /* FrancaTerrain.bin */,
+				14E21DE070FC6A97B733E88E /* FrancaTerrain.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ECC6D20B829479FA13AEC24C /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				62A51B5DB7FE84FC92C3DB30 /* VisionInsightPrompt.swift */,
+				3241B4C977DE0D17B88D0E4E /* VisionInsightService.swift */,
+				15CD7368470D6486206AE891 /* VisionInsightViews.swift */,
+			);
+			path = AI;
+			sourceTree = "<group>";
+		};
+		EE117FF98597013B6E226DB4 /* SharePlay */ = {
+			isa = PBXGroup;
+			children = (
+				1FD220DAEFBAC83B26C07482 /* RadarGroupActivity.swift */,
+				3BF92013770CCEC57577C947 /* RadarSharedSpaceRelay.swift */,
+				16E4691D51EE22F440EF3220 /* RadarSharePlayButton.swift */,
+				0AB282DE5C51C2B51C3568B5 /* RadarSharePlayCoordinator.swift */,
+				3E0835D06104ACE709028903 /* RadarSyncModel.swift */,
+			);
+			path = SharePlay;
+			sourceTree = "<group>";
+		};
+		F0E2102EED1F8E75103ADCC0 /* Shell */ = {
+			isa = PBXGroup;
+			children = (
+				81DED9957614553FFEBC4064 /* ACARSMessageWindow.swift */,
+				5D2CA831D3B0F99ABE219A5D /* HourDayBinning.swift */,
+				8CED36F105CDE99081E5A25D /* VisionSectionContent.swift */,
+			);
+			path = Shell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0241574F026CA8DAA2A03D4D /* MeuLabVisionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D00C153A5E5F57ECE230798 /* Build configuration list for PBXNativeTarget "MeuLabVisionUITests" */;
+			buildPhases = (
+				76C910FD670600F6CAF94E54 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				013954AEE16880C82B95EBAE /* PBXTargetDependency */,
+			);
+			name = MeuLabVisionUITests;
+			packageProductDependencies = (
+			);
+			productName = MeuLabVisionUITests;
+			productReference = 8692472ED671C1F9A1EA6B62 /* MeuLabVisionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		08A2EB93642E6DA46D5AC11C /* MeuLabVisionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F5E6C3A9592D6624CDF655C /* Build configuration list for PBXNativeTarget "MeuLabVisionTests" */;
+			buildPhases = (
+				591FDDE0FD2B230A08CF1B2E /* Sources */,
+				9FCE0CD7F3C6CE8B30ABED66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB76DEC1FDBF70BE909D2B37 /* PBXTargetDependency */,
+			);
+			name = MeuLabVisionTests;
+			packageProductDependencies = (
+			);
+			productName = MeuLabVisionTests;
+			productReference = 883CEE63906ED83C6EBA5807 /* MeuLabVisionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A2B9A3E5319CE9E6EBB750FB /* MeuLabVision */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56CA24CF4A18FBB6C2B643D7 /* Build configuration list for PBXNativeTarget "MeuLabVision" */;
+			buildPhases = (
+				DDE274C485D55A6EC48B170D /* Sources */,
+				661AA35A20AC3843FC849646 /* Resources */,
+				4D8A640E7CF70E2055FF4400 /* Frameworks */,
+				08BD7DCE0150C7085898C34A /* Embed Foundation Extensions */,
+				8744359298A55107817CCAED /* Copy local trip itinerary */,
+				9EFF3F5AA024E61060617531 /* Copy local API configuration */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4F300471C6BAB207FCBE960 /* PBXTargetDependency */,
+			);
+			name = MeuLabVision;
+			packageProductDependencies = (
+				8AE19D5A1636402898DA76A9 /* MeuLabCore */,
+			);
+			productName = MeuLabVision;
+			productReference = C10A8DA0BCC6D3794D46C900 /* MeuLabVision.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C872AFFA6CFC3CBFC9E5A196 /* MeuLabVisionWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA1877A698F8317EB879B178 /* Build configuration list for PBXNativeTarget "MeuLabVisionWidgets" */;
+			buildPhases = (
+				11D0108F74F51E595E4E5A24 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeuLabVisionWidgets;
+			packageProductDependencies = (
+			);
+			productName = MeuLabVisionWidgets;
+			productReference = 2A4A3085F97E4216A35A3B0A /* MeuLabVisionWidgets.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75CF483D513D39DDE178B003 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					0241574F026CA8DAA2A03D4D = {
+						TestTargetID = A2B9A3E5319CE9E6EBB750FB;
+					};
+				};
+			};
+			buildConfigurationList = 9191F8AA9D1FD301475E18AF /* Build configuration list for PBXProject "MeuLabVision" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 8F82F94BA263833920F0320B;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A9A063755DF29A251B4AC264 /* XCLocalSwiftPackageReference "MeuLabCore" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 1C35993A9DA37E5909DD6AF8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2B9A3E5319CE9E6EBB750FB /* MeuLabVision */,
+				C872AFFA6CFC3CBFC9E5A196 /* MeuLabVisionWidgets */,
+				0241574F026CA8DAA2A03D4D /* MeuLabVisionUITests */,
+				08A2EB93642E6DA46D5AC11C /* MeuLabVisionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		661AA35A20AC3843FC849646 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E35C799385EDCC0EC49EA3C /* Assets.xcassets in Resources */,
+				EC1058F0B4FD8E0EC9FFBC74 /* FrancaTerrain.bin in Resources */,
+				83482203104780B7827C655E /* FrancaTerrain.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FCE0CD7F3C6CE8B30ABED66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE1D10F2E41881DCD1550B95 /* acars_detail.json in Resources */,
+				5B52EC2801E74D211FE97509 /* acars_history.json in Resources */,
+				73E2B5E21AFA0AA2BD4BC50F /* acars_hourly.json in Resources */,
+				CB4D8B25C18D82F1EE16D0B7 /* acars_messages.json in Resources */,
+				B657FDB924587E31F59C6CA1 /* acars_summary.json in Resources */,
+				C56F2D98BC9BC1455B98ADBC /* alert_trigger.json in Resources */,
+				A90173EEB931D74191ED7F31 /* alerts_rules.json in Resources */,
+				7858BB030DB7679D570C30C8 /* alerts_triggers.json in Resources */,
+				2DAD093D2CB561224428CF90 /* analytics_adsb.json in Resources */,
+				A3F2417A4586B64EC6EFBE92 /* analytics_system.json in Resources */,
+				63885FDB3F7A0BDE0CFB2DBE /* disk_health.json in Resources */,
+				4DF450715ECDE52D2E57702F /* docker_status.json in Resources */,
+				3E9745D479CE4EF4044E9E8F /* infra_metrics.json in Resources */,
+				65CAAED7F6F8C2112D78A54D /* lab_acars_summary.json in Resources */,
+				540B806D2B39414C79B4EAEC /* open_meteo_forecast.json in Resources */,
+				D488718649FC85EA69C8725A /* readsb_aircraft.json in Resources */,
+				A5EFAE6F293A44CE74EDEB0C /* system_network.json in Resources */,
+				0CBBEE9CBFE4F984E6711F73 /* system_partitions.json in Resources */,
+				5422D446644C7236083B3A3D /* system_processes.json in Resources */,
+				2E4999E7C7EF1232139F18FB /* systemd_status.json in Resources */,
+				9A6E4E190B89E4C55942AEC9 /* trip_itinerary.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8744359298A55107817CCAED /* Copy local trip itinerary */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Copy local trip itinerary";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -f \"${PROJECT_DIR}/Resources/TripItinerary.json\" ]; then\n  cp \"${PROJECT_DIR}/Resources/TripItinerary.json\" \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TripItinerary.json\"\nelse\n  echo \"warning: TripItinerary.json ausente; a seção Viagem fica sem roteiro\"\nfi\n";
+		};
+		9EFF3F5AA024E61060617531 /* Copy local API configuration */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Copy local API configuration";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -f \"${PROJECT_DIR}/Secrets.plist\" ]; then\n  cp \"${PROJECT_DIR}/Secrets.plist\" \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Secrets.plist\"\nelif [ \"${CONFIGURATION}\" = \"Release\" ]; then\n  echo \"error: Secrets.plist ausente; build Release sairia sem acesso à API\"\n  exit 1\nelse\n  echo \"warning: Secrets.plist ausente; recursos da API ficam indisponíveis\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11D0108F74F51E595E4E5A24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4041E0DE8B5C39D0D285F90 /* MeuLabVisionWidgets.swift in Sources */,
+				1E560B0FA90D6F77493F1A7C /* WidgetSnapshot.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		591FDDE0FD2B230A08CF1B2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20F4F89BB8F3A0F12932D884 /* ADSBDecoderTests.swift in Sources */,
+				E5FF6228D73C527584B647A3 /* CoreDecoderTests.swift in Sources */,
+				0EB9D07A6E671A0BD2C78B8E /* Fase3ATests.swift in Sources */,
+				203904BFFF024B8ADF57AE64 /* Fase3BTests.swift in Sources */,
+				83DB4D98C5A62FA306B077DD /* Fase4IntentTests.swift in Sources */,
+				51025903C3A64EBF312F5339 /* Fase4WidgetTests.swift in Sources */,
+				6C14D5B0AE5B1DDED25DF2E9 /* Fase5AITests.swift in Sources */,
+				A72EDEC3BD9A299F2513E5AB /* Fase5ImmersiveTests.swift in Sources */,
+				BD31126782E480BF995A09C3 /* Fase5SharePlayTests.swift in Sources */,
+				FF0B010EE2C6B30E10621E8F /* Fase6AudioTests.swift in Sources */,
+				A30E4C0B30CC22C98DF56C9F /* Fase6IntentsTests.swift in Sources */,
+				0F41E41BDF78A37B029C0382 /* GeodesyTests.swift in Sources */,
+				D480DF0CE34E3F2575A936F8 /* LabFase1Tests.swift in Sources */,
+				1705DAC30590D6DF2494BABC /* MockURLProtocol.swift in Sources */,
+				AB7BF7969682531F99C3D9EE /* RadarFase1Tests.swift in Sources */,
+				A313EB2F87B511CF7E7CDA04 /* RadarFase2EntityTests.swift in Sources */,
+				D31C5C21B7AB098923F16506 /* RadarFase2VolumeTests.swift in Sources */,
+				D216524EB92377C87568AE41 /* RadarFlightFactsTests.swift in Sources */,
+				B521EB9F3C222425A9CAF283 /* RadarSceneRegressionTests.swift in Sources */,
+				3E3D45CEBD521D7CE54FC908 /* ReviewCleanupTests.swift in Sources */,
+				810CC0E88C4DDF683AA1A9F4 /* SectionsAndDataFixesTests.swift in Sources */,
+				7958039DE0ACD47A3043CDD9 /* SelectionAndWindowsTests.swift in Sources */,
+				C46F0894B6A166E22BC4A4FD /* SeriesParseTests.swift in Sources */,
+				786E6878A39798A9FFC24B9B /* TripTests.swift in Sources */,
+				63EB7A656FBF3F335A5317E3 /* VisionAPIClientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76C910FD670600F6CAF94E54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD3B2E138803EA82F399142A /* MeuLabVisionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDE274C485D55A6EC48B170D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08626BCCC47CBBFD3B2A0C36 /* ACARSMessageWindow.swift in Sources */,
+				FBC5F0FC6B807D18EAA97CDF /* ACARSModels.swift in Sources */,
+				D51E07FE486F10F462AFC52F /* ADSBClient.swift in Sources */,
+				5FAE1D7F61FC8E370FA47E3F /* Aircraft.swift in Sources */,
+				A374059984DF2C24EB11DDE2 /* AircraftDecoder.swift in Sources */,
+				9B28FF78066E2CF4E0BD9A47 /* AircraftDetailView.swift in Sources */,
+				8FC56F8E9470E2A5C6EF5C92 /* AircraftEntityFactory.swift in Sources */,
+				412FC4D156EEF5A6FB3DFC48 /* AircraftListView.swift in Sources */,
+				381EE2F2241F61706EE46572 /* AircraftMotionSystem.swift in Sources */,
+				1ECB4E697A21FA52D3C7EFB5 /* AlertChimePlayer.swift in Sources */,
+				1E4949156130C252A5A2E201 /* AlertEntity.swift in Sources */,
+				15AC3288A7C554C39CA60004 /* AlertModels.swift in Sources */,
+				906DAE69B9193F8532D32118 /* AlertNotificationLedger.swift in Sources */,
+				74F22A3E7B38186F017B2B88 /* AnalyticsModels.swift in Sources */,
+				B32BE3278E2600381090D890 /* CPUHistoryModels.swift in Sources */,
+				998BF07B6E92C47651D36BF6 /* DashboardView.swift in Sources */,
+				DB880D7DBFBA5E20C4AC218F /* DockerLogsWindowView.swift in Sources */,
+				9AE86140EADAA695D5AB32E5 /* FlightStore.swift in Sources */,
+				511D89BA12D31F935D38275D /* ForecastModels.swift in Sources */,
+				9FACDA645E7A52CC6222151E /* Formatters.swift in Sources */,
+				87F9B0BC1764E323A1F54BAD /* Geodesy.swift in Sources */,
+				2A3A528F1FD1C95551355374 /* HourDayBinning.swift in Sources */,
+				6325A9C286D6A103BB3C9EBC /* ImageCache.swift in Sources */,
+				5A24034B2923A19EC5F04B1B /* ImmersiveRadarModel.swift in Sources */,
+				FCE9AAB88710C316EB463889 /* ImmersiveRadarState.swift in Sources */,
+				B6A538A8B53D858D9607713F /* ImmersiveRadarToggleButton.swift in Sources */,
+				79002C07B2C9E1303DF79239 /* ImmersiveRadarView.swift in Sources */,
+				EE8DF83FEC3CA8B94E85334E /* InfraModels.swift in Sources */,
+				6B023821D8939A4F6612CBCD /* LabIntents.swift in Sources */,
+				F48641E49AE54E0F0FFFE307 /* LabStoreModels.swift in Sources */,
+				009CC6DDEA0438E6FFF96600 /* LineChartAccessibility.swift in Sources */,
+				D8DABF4859AC8837FAD83D9D /* MeuLabCoreExports.swift in Sources */,
+				C58B099D1641484B220E8804 /* MeuLabVisionApp.swift in Sources */,
+				D522C1D5F6CD01DD00A422BB /* PollingScheduler.swift in Sources */,
+				A40CBB1074A64B83B91A5660 /* RadarCloudSnapshot.swift in Sources */,
+				E464DBF19AF9067057BC9DE7 /* RadarFlightFacts.swift in Sources */,
+				3CF209CA17CAEADDC1C5EE01 /* RadarGroupActivity.swift in Sources */,
+				551EA93DF2BA299647CB74A6 /* RadarMapSnapshot.swift in Sources */,
+				2F56431B7BBE0FD32C7B8E68 /* RadarMapWindowView.swift in Sources */,
+				CCAEAF14C94D30275A9EECD2 /* RadarMeshBuilder.swift in Sources */,
+				D054DA33719E146053D60791 /* RadarOrnamentView.swift in Sources */,
+				33F9770CA5B97BD6DA7E00EE /* RadarPingPlayer.swift in Sources */,
+				4B2DAB7D62326A7B688A88B2 /* RadarSceneController.swift in Sources */,
+				F4846CCF6F6F5F70BEF219B4 /* RadarSettings.swift in Sources */,
+				EBEEF351026E4540ED90DA21 /* RadarSharePlayButton.swift in Sources */,
+				FCE1548B5158C660DA856FF1 /* RadarSharePlayCoordinator.swift in Sources */,
+				4D3F4F83C6A2D0E8E9D7A460 /* RadarSharedSpaceRelay.swift in Sources */,
+				C88C2B68C4F368E926625438 /* RadarSurfaceFeed.swift in Sources */,
+				308A9113395256D6128638C2 /* RadarSyncModel.swift in Sources */,
+				705AD12541CFBC079D31D13B /* RadarTerrain.swift in Sources */,
+				2501750DD147AA535DA36B86 /* RadarVolumeView.swift in Sources */,
+				CC400623A4C14FAF288C9D5C /* ReadsbAircraft.swift in Sources */,
+				09E0C68BCBA5DF9321B9EB28 /* SettingsView.swift in Sources */,
+				0A94D97549859FF063619976 /* SpatialAudioSession.swift in Sources */,
+				FF1622A0D420FEC92FA669A6 /* SpatialCardStyle.swift in Sources */,
+				610225FF5AE86BE2CA9D5914 /* StatisticsView.swift in Sources */,
+				515B3D9890C065CF0493B3E7 /* VisionACARSView.swift in Sources */,
+				168DE4C1B0B0C72CA04464BC /* VisionAPIClient.swift in Sources */,
+				CE4E0B6AACF87D40FB01B83A /* VisionAlertNotifier.swift in Sources */,
+				06A07331418A7DE73E4E0DA5 /* VisionAlertsView.swift in Sources */,
+				E3D351D33287D997397927A1 /* VisionAnalyticsView.swift in Sources */,
+				C65E9EF569D58B0B4192F9EF /* VisionDeepLink.swift in Sources */,
+				3254415C8B04A83C89E69F54 /* VisionFlightEnrichmentService.swift in Sources */,
+				315BB954232F17C58C43DE90 /* VisionFlightSearchView.swift in Sources */,
+				E30432825A3DC1235A0C61AD /* VisionInfraExtrasView.swift in Sources */,
+				E07B4D7A37FD01EA3D655B21 /* VisionInsightPrompt.swift in Sources */,
+				494750174881564F20C8FA6D /* VisionInsightService.swift in Sources */,
+				21D1916C2BCE74A07C609BF2 /* VisionInsightViews.swift in Sources */,
+				F655E7ABFDE329D2E5CB44E4 /* VisionIntents.swift in Sources */,
+				9F868B477B764F01D1C93B6D /* VisionLabStore.swift in Sources */,
+				070180876832600DA998A4F2 /* VisionRootView.swift in Sources */,
+				F142CC723A228A4A5620BDD2 /* VisionSectionContent.swift in Sources */,
+				36A32AB401284351D4403DBA /* VisionSeriesView.swift in Sources */,
+				DEDD1A652B5B86EF13328F67 /* VisionSystemExtrasView.swift in Sources */,
+				7AF529D701F4FFC6B2D96959 /* VisionTripModels.swift in Sources */,
+				32EA44E014A68C8E150D6C0F /* VisionTripView.swift in Sources */,
+				0B5414CD0B86682E2D784476 /* VisionWeatherView.swift in Sources */,
+				14D37DE678B2158B0921C709 /* WidgetSnapshot.swift in Sources */,
+				4083B357138B1B236096C06E /* WidgetSnapshotWriter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		013954AEE16880C82B95EBAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2B9A3E5319CE9E6EBB750FB /* MeuLabVision */;
+			targetProxy = BE1D722FDF4025635E62EE96 /* PBXContainerItemProxy */;
+		};
+		AB76DEC1FDBF70BE909D2B37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2B9A3E5319CE9E6EBB750FB /* MeuLabVision */;
+			targetProxy = C76AEC98C0FE7CCAF5175068 /* PBXContainerItemProxy */;
+		};
+		B4F300471C6BAB207FCBE960 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C872AFFA6CFC3CBFC9E5A196 /* MeuLabVisionWidgets */;
+			targetProxy = 2041FF5945E2C5F519A00FAF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		06C7F4A2369268CF6942292B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fun.meulab.vision.uitests;
+				SDKROOT = xros;
+				TARGETED_DEVICE_FAMILY = 7;
+				TEST_TARGET_NAME = MeuLabVision;
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Release;
+		};
+		4B869AE277803AE605B9A8F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widgets/MeuLabVisionWidgets.entitlements;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = Widgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fun.meulab.vision.widgets;
+				SDKROOT = xros;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 7;
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Release;
+		};
+		6FDD422CED4FBEAAB0F5FABD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MeuLabVision.entitlements;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "MeuLab Vision";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fun.meulab.vision;
+				SDKROOT = xros;
+				TARGETED_DEVICE_FAMILY = 7;
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Release;
+		};
+		84F02CFDCF0E0C9F9B3574F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 7;
+			};
+			name = Debug;
+		};
+		8CD255A8AEAD6D93DC24EE3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 7;
+			};
+			name = Release;
+		};
+		B83BE00223D390692CCF6A96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fun.meulab.vision.uitests;
+				SDKROOT = xros;
+				TARGETED_DEVICE_FAMILY = 7;
+				TEST_TARGET_NAME = MeuLabVision;
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Debug;
+		};
+		B8B9AE91869CABFACE19161F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widgets/MeuLabVisionWidgets.entitlements;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = Widgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fun.meulab.vision.widgets;
+				SDKROOT = xros;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 7;
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Debug;
+		};
+		CC2762A0507198A10DE3E715 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fun.meulab.vision.tests;
+				SDKROOT = xros;
+				TARGETED_DEVICE_FAMILY = 7;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeuLabVision.app/MeuLabVision";
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Release;
+		};
+		E67822C3D5D14DE93AF7F55B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fun.meulab.vision.tests;
+				SDKROOT = xros;
+				TARGETED_DEVICE_FAMILY = 7;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeuLabVision.app/MeuLabVision";
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Debug;
+		};
+		F3F92EAD54C7EFB70847F1BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MeuLabVision.entitlements;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "MeuLab Vision";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fun.meulab.vision;
+				SDKROOT = xros;
+				TARGETED_DEVICE_FAMILY = 7;
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56CA24CF4A18FBB6C2B643D7 /* Build configuration list for PBXNativeTarget "MeuLabVision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3F92EAD54C7EFB70847F1BA /* Debug */,
+				6FDD422CED4FBEAAB0F5FABD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7D00C153A5E5F57ECE230798 /* Build configuration list for PBXNativeTarget "MeuLabVisionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B83BE00223D390692CCF6A96 /* Debug */,
+				06C7F4A2369268CF6942292B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9191F8AA9D1FD301475E18AF /* Build configuration list for PBXProject "MeuLabVision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F02CFDCF0E0C9F9B3574F5 /* Debug */,
+				8CD255A8AEAD6D93DC24EE3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9F5E6C3A9592D6624CDF655C /* Build configuration list for PBXNativeTarget "MeuLabVisionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E67822C3D5D14DE93AF7F55B /* Debug */,
+				CC2762A0507198A10DE3E715 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AA1877A698F8317EB879B178 /* Build configuration list for PBXNativeTarget "MeuLabVisionWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8B9AE91869CABFACE19161F /* Debug */,
+				4B869AE277803AE605B9A8F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		A9A063755DF29A251B4AC264 /* XCLocalSwiftPackageReference "MeuLabCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = MeuLabCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8AE19D5A1636402898DA76A9 /* MeuLabCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MeuLabCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 75CF483D513D39DDE178B003 /* Project object */;
+}

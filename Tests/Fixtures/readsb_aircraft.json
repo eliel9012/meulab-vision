@@ -1,0 +1,9 @@
+{"now":1761832800.5,"messages":123456,"aircraft":[
+ {"hex":"E48A1B","type":"adsb_icao","flight":"GLO1234 ","r":"PR-GXA","t":"B38M","desc":"BOEING 737 MAX 8","lat":-20.6,"lon":-47.3,"alt_baro":35000,"alt_geom":35500,"gs":450.5,"track":370,"baro_rate":-64,"seen":0.4,"seen_pos":1.2,"rssi":-20.1,"category":"A3","squawk":"7000"},
+ {"hex":"e48a1b","flight":"DUP","lat":0,"lon":0},
+ {"hex":"e4ffff","alt_baro":"ground","gs":-3,"seen_pos":-1,"squawk":1200,"lat":"-20.51","lon":"-47.40"},
+ {"hex":"e40001","alt_geom":"12000","lat":95,"lon":10,"geom_rate":512},
+ {"hex":"e40002","alt_baro":"bogus"},
+ {"hex":"   ","flight":"BLANK"},
+ {"flight":"NOHEX"}
+]}
