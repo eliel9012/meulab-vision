@@ -6,11 +6,11 @@
 
 MeuLab Vision é um app nativo para visionOS. Ele coloca um radar de mesa na sua sala, com aeronaves captadas por um receptor ADS-B local voando sobre relevo real, ao lado de um painel de controle do laboratório doméstico que roda o receptor.
 
-![Central com dados reais de aeronaves](docs/screenshots/radar-dashboard.png)
+![Mesa de vidro do radar com aeronaves reais sobre relevo real](docs/screenshots/radar-table.png)
 
-| Volume do radar 3D | Gráfico dia × hora em 3D |
+| Central | Gráfico dia × hora em 3D |
 | --- | --- |
-| ![Volume do radar 3D](docs/screenshots/radar-volume.png) | ![Gráfico dia × hora em 3D](docs/screenshots/chart-3d.png) |
+| ![Central com dados reais de aeronaves](docs/screenshots/radar-dashboard.png) | ![Gráfico dia × hora em 3D](docs/screenshots/chart-3d.png) |
 | **Analytics** | **ACARS com heatmap** |
 | ![Analytics](docs/screenshots/analytics.png) | ![ACARS com heatmap](docs/screenshots/acars.png) |
 

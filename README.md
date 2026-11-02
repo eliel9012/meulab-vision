@@ -6,11 +6,11 @@
 
 MeuLab Vision is a native visionOS app. It places a tabletop radar in your room, with aircraft from a local ADS-B receiver flying over real terrain, next to a control panel for the home lab that runs the receiver.
 
-![Mission control with live aircraft data](docs/screenshots/radar-dashboard.png)
+![Glass radar table with live aircraft over real terrain](docs/screenshots/radar-table.png)
 
-| 3D radar volume | Day × hour chart in 3D |
+| Mission control | Day × hour chart in 3D |
 | --- | --- |
-| ![3D radar volume](docs/screenshots/radar-volume.png) | ![Day × hour chart in 3D](docs/screenshots/chart-3d.png) |
+| ![Mission control with live aircraft data](docs/screenshots/radar-dashboard.png) | ![Day × hour chart in 3D](docs/screenshots/chart-3d.png) |
 | **Analytics** | **ACARS with heatmap** |
 | ![Analytics](docs/screenshots/analytics.png) | ![ACARS with heatmap](docs/screenshots/acars.png) |
 
