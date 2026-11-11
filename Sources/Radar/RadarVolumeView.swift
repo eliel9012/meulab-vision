@@ -18,7 +18,7 @@ struct RadarVolumeView: View {
     @State private var manipulationSubscription: EventSubscription?
     @State private var activateSubscription: EventSubscription?
     @State private var surfaces = RadarSurfaceFeed()
-    /// Bumped while paused so stale aircraft still age out without network updates.
+    /// Bumped while no snapshot arrives (paused or feed down) so stale aircraft still age out.
     @State private var ageTick = 0
     @State private var viewpoint: SquareAzimuth = .front
     @State private var appliedTableScale: Double?
@@ -96,9 +96,9 @@ struct RadarVolumeView: View {
             else if phase == .background { store.releasePolling(Self.pollingClient) }
         }
         .onChange(of: store.selectedHex) { _, _ in showCard = false }
-        .task(id: store.isPaused) {
+        .task(id: store.needsAgeTick) {
             // Live polling already refreshes the scene every few seconds.
-            guard store.isPaused else { return }
+            guard store.needsAgeTick else { return }
             while !Task.isCancelled {
                 try? await Task.sleep(for: .seconds(5))
                 ageTick &+= 1

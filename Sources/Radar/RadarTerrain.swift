@@ -47,7 +47,12 @@ struct RadarTerrain {
                      width: metadata.width, heights: values)
     }
 
+    /// Outside the grid there is no elevation data: the surface stays flat at the receiver's
+    /// level instead of stretching the edge samples outwards.
     func elevation(eastMeters: Double, northMeters: Double) -> Double {
+        guard abs(eastMeters) <= radiusMeters, abs(northMeters) <= radiusMeters else {
+            return centerElevationMeters
+        }
         let column = min(Double(width - 1), max(0, (eastMeters + radiusMeters) / spacingMeters))
         let row = min(Double(width - 1), max(0, (radiusMeters - northMeters) / spacingMeters))
         let x = Int(column), y = Int(row)

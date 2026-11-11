@@ -7,6 +7,21 @@ private struct NoNetworkClient: ADSBProviding {
     func fetch() async throws -> Data { throw CancellationError() }
 }
 
+/// Serves one aircraft whose receiver clock is `receiverLag` seconds behind this device.
+private actor LaggedFeedClient: ADSBProviding {
+    private var receiverLag: TimeInterval
+
+    init(receiverLag: TimeInterval) { self.receiverLag = receiverLag }
+
+    func setReceiverLag(_ lag: TimeInterval) { receiverLag = lag }
+
+    func fetch() async throws -> Data {
+        let now = Date().timeIntervalSince1970 - receiverLag
+        let json = #"{"now":\#(now),"aircraft":[{"hex":"a1","lat":-20.5,"lon":-47.4,"alt_baro":3000,"seen_pos":2}]}"#
+        return Data(json.utf8)
+    }
+}
+
 @MainActor
 @Suite("Regressões da cena do radar")
 struct RadarSceneRegressionTests {
@@ -151,5 +166,54 @@ struct RadarSceneRegressionTests {
         }
         task.cancel()
         #expect(await task.value == nil)
+    }
+
+    @Test func receiverClockDifferenceDoesNotAgeLiveTraffic() async throws {
+        let store = FlightStore(client: LaggedFeedClient(receiverLag: 3600))
+        await store.refresh()
+        let flight = try #require(store.aircraft.first)
+        let now = Date()
+        let age = try #require(store.ageOfPosition(flight, at: now))
+        #expect(age >= 2 && age < 5)
+        #expect(store.isRenderable(flight, at: now))
+        let later = try #require(store.ageOfPosition(flight, at: now.addingTimeInterval(30)))
+        #expect(later >= 32 && later < 35)
+    }
+
+    @Test func receiverThatStopsUpdatingStillAgesOut() async throws {
+        let client = LaggedFeedClient(receiverLag: 0)
+        let store = FlightStore(client: client)
+        await store.refresh()
+        // The same snapshot served 40 s later: its `now` falls 40 s behind.
+        await client.setReceiverLag(40)
+        await store.refresh()
+        let flight = try #require(store.aircraft.first)
+        let age = try #require(store.ageOfPosition(flight, at: Date()))
+        #expect(age >= 42 && age < 45)
+    }
+
+    @Test func ageTickRunsWheneverNoSnapshotIsComing() async {
+        let store = FlightStore(client: LaggedFeedClient(receiverLag: 0))
+        #expect(store.needsAgeTick)
+        await store.refresh()
+        #expect(!store.needsAgeTick)
+        store.isPaused = true
+        #expect(store.needsAgeTick)
+        store.isPaused = false
+        let failing = FlightStore(client: NoNetworkClient())
+        await failing.refresh()
+        #expect(failing.needsAgeTick)
+    }
+
+    @Test func terrainIsFlatOutsideTheElevationGrid() throws {
+        let terrain = try #require(RadarTerrain.shared)
+        let flat = terrain.centerElevationMeters
+        #expect(terrain.elevation(eastMeters: 250_000, northMeters: 0) == flat)
+        #expect(terrain.elevation(eastMeters: -120_000, northMeters: 590_000) == flat)
+        // Inside the grid the real relief is still there.
+        let inside = stride(from: -190_000.0, through: 190_000, by: 10_000).map {
+            terrain.elevation(eastMeters: $0, northMeters: $0)
+        }
+        #expect(Set(inside).count > 10)
     }
 }

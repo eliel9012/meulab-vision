@@ -91,7 +91,7 @@ xcodebuild test -project MeuLabVision.xcodeproj -scheme MeuLabVision -destinatio
 xcodebuild test -project MeuLabVision.xcodeproj -scheme MeuLabVisionUITests -destination 'platform=visionOS Simulator,name=Apple Vision Pro'
 ```
 
-The suite has 235 unit tests and 10 UI tests. In a clean checkout, 3 unit tests and 1 UI test are skipped because they need the personal itinerary.
+The suite has 239 unit tests and 10 UI tests. In a clean checkout, 3 unit tests and 1 UI test are skipped because they need the personal itinerary.
 
 The UI tests need network access and a configured backend.
 

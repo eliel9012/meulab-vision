@@ -57,6 +57,9 @@ final class FlightStore {
     @ObservationIgnored private var volumeOpenRequestedAt: Date?
     @ObservationIgnored private var pollingTask: Task<Void, Never>?
     @ObservationIgnored private var fetching = false
+    /// Smallest (local receipt − receiver `now`) gap seen this session: the offset between
+    /// this device's clock and the receiver's, plus the best network latency.
+    @ObservationIgnored private var clockOffset: TimeInterval?
     /// Bumped whenever `aircraft` is replaced; identifies the snapshot for memoisation.
     @ObservationIgnored private var aircraftVersion = 0
     @ObservationIgnored private var renderableCache: (key: RenderableKey, value: [Aircraft])?
@@ -98,6 +101,10 @@ final class FlightStore {
         selectedHex = hex
     }
 
+    /// No fresh snapshot is coming (paused or feed down): the radar scenes must re-evaluate
+    /// position ages on a timer, or stale aircraft would stay on the table.
+    var needsAgeTick: Bool { isPaused || !isConnected }
+
     var selectedAircraft: Aircraft? { aircraft.first { $0.hex == selectedHex } }
     var receivedCount: Int { aircraft.count }
     var positionedCount: Int { aircraft.filter(\.hasPosition).count }
@@ -114,7 +121,9 @@ final class FlightStore {
 
     func ageOfPosition(_ flight: Aircraft, at now: Date) -> Double? {
         guard let original = flight.seenPositionSeconds else { return nil }
-        let anchor = snapshotGeneratedAt ?? lastReceivedAt ?? now
+        // readsb ages count from the receiver's `now`; shift it onto this device's clock so
+        // a clock difference neither hides live traffic nor makes stale traffic look fresh.
+        let anchor = snapshotGeneratedAt?.addingTimeInterval(clockOffset ?? 0) ?? lastReceivedAt ?? now
         return original + max(0, now.timeIntervalSince(anchor))
     }
 
@@ -221,10 +230,17 @@ final class FlightStore {
     }
 
     private func apply(_ snapshot: AircraftSnapshot) {
+        let receivedAt = Date()
+        if let generatedAt = snapshot.generatedAt {
+            // A receiver that stops updating keeps its old `now`: the gap only grows, the
+            // minimum stays, and its aircraft still age out.
+            let gap = receivedAt.timeIntervalSince(generatedAt)
+            clockOffset = min(clockOffset ?? gap, gap)
+        }
         aircraft = snapshot.aircraft
-        lastReceivedAt = Date()
+        lastReceivedAt = receivedAt
         snapshotGeneratedAt = snapshot.generatedAt
-        recordTracks(at: lastReceivedAt ?? Date())
+        recordTracks(at: receivedAt)
         WidgetSnapshotWriter.shared.updateRadar(aircraftCount: aircraft.count, positionedCount: positionedCount)
         // In a SharePlay group the hex may come from a participant whose feed differs:
         // keep it pending instead of clearing it for this participant.

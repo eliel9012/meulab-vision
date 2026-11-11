@@ -91,7 +91,7 @@ xcodebuild test -project MeuLabVision.xcodeproj -scheme MeuLabVision -destinatio
 xcodebuild test -project MeuLabVision.xcodeproj -scheme MeuLabVisionUITests -destination 'platform=visionOS Simulator,name=Apple Vision Pro'
 ```
 
-São 235 testes unitários e 10 testes de UI. Em um checkout limpo, 3 testes unitários e 1 de UI são pulados porque precisam do roteiro pessoal.
+São 239 testes unitários e 10 testes de UI. Em um checkout limpo, 3 testes unitários e 1 de UI são pulados porque precisam do roteiro pessoal.
 
 Os testes de UI precisam de rede e de um backend configurado.
 

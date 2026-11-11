@@ -93,8 +93,9 @@ struct ImmersiveRadarView: View {
             guard store.sharePlay.isActive else { return }
             try? await store.sharePlay.startSharedCoordinateSpace()
         }
-        .task(id: store.isPaused) {
-            guard store.isPaused else { return }
+        .task(id: store.needsAgeTick) {
+            // Live polling already refreshes the scene every few seconds.
+            guard store.needsAgeTick else { return }
             while !Task.isCancelled {
                 try? await Task.sleep(for: .seconds(5))
                 ageTick &+= 1
